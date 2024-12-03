@@ -1,0 +1,560 @@
+*{
+	 font-family: 'Bebas Neue';
+}
+
+body{
+	background-color:dimgrey;
+	margin:0;
+	padding:0;
+}
+
+::selection {
+    background-color: gold;  /* Złote tło */
+    color: black;            /* Czarny tekst */
+}
+
+
+header{
+	background-color:#212121;
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat; 
+	height:400px;
+	margin-bottom:2px;
+}
+
+
+
+.logoheader1{
+	border:2px solid white;
+	padding:10px;
+	margin:10px;
+	size:10px;
+}
+	
+.menu{
+	font-size:28px;
+	padding:3px;
+	margin:40px;
+	letter-spacing:1px;
+    text-decoration: none;
+	color: #D3D3D3; 
+    transition: color 0.4s ease; 
+	position: relative;
+    top: -68px;   
+    left: 70px; 
+	
+
+}
+
+.menu:hover{
+	color: white;
+	text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+	transition: text-shadow 0.2s ease-in-out;	
+}
+
+.menudiv{
+	font-size: 24px;
+	text-align:center;
+}
+
+h1{
+	color:white;
+	letter-spacing:3px;
+	font-size:100px;
+	position: relative;
+    top: -29px;   
+    left: 150px; 
+}
+
+.kreska{
+	color:gold;
+	position: relative;
+    top: -295px;   
+    left: 150px; 
+}
+
+h3{
+	color:lightgray;
+	letter-spacing:2px;
+	position: relative;
+    top: -209px;   
+    left: 650px; 
+}
+
+
+.flota1 {
+    position: relative;
+    height:230px; /* Wysokość sekcji */
+	width:450px;
+	
+}
+
+ /* Kontener z filmikiem */
+        .video-container {
+            position: absolute; /* Kontrolowanie położenia */
+            top: 265px; /* Wyśrodkowanie kontenera w pionie */
+            right: -450px; /* Początkowo ukryty poza prawą krawędzią */
+            transform: translateY(-50%); /* Wyrównanie do środka w pionie */
+            width: 350px; /* Szerokość wideo */
+            height: 200px; /* Wysokość wideo */
+            background-color: black;
+            transition: right 2s ease-out; /* Animacja wysuwania bez skalowania */
+            border-radius: 10px; /* Zaokrąglone rogi kontenera */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtelny cień */
+            border: 2px solid white; /* Biały border wokół kontenera */
+        }
+
+        /* Aktywna klasa dla kontenera, wysuwająca filmik */
+        .video-container.active {
+            right: 30px; /* Wysuwanie na widoczne miejsce */
+        }
+
+        /* Styl dla samego wideo */
+        video {
+            width: 100%; /* Dopasowanie szerokości do kontenera */
+            height: 100%; /* Dopasowanie wysokości do kontenera */
+            object-fit: cover; /* Przycięcie wideo, aby wypełniło całą przestrzeń */
+            border-radius: 7px; /* Zaokrąglone rogi filmiku */
+            filter: grayscale(100%); /* Filtr czarno-biały na początku */
+            transition: filter 0.3s ease-in-out; /* Animacja zmiany filtra */
+        }
+
+        /* Efekt po najechaniu na filmik (zabarwienie) */
+        video:hover {
+            filter: grayscale(0%); /* Usuwanie czarno-białego filtra na hover */
+        }
+
+
+.golf8vid {
+    display: block; /* Wyświetlenie jako blok */
+    margin: 20px auto; /* Wyśrodkowanie */
+    max-width: 90%; /* Dostosowanie do szerokości ekranu */
+    border: 2px solid white; /* Biała ramka */
+    border-radius: 10px; /* Zaokrąglone rogi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtelny cień */
+    filter: grayscale(100%); /* Czarno-biały filtr */
+	
+}
+
+
+    display: block; /* Wyświetlenie jako blok */
+    margin: 20px auto; /* Wyśrodkowanie */
+    max-width: 90%; /* Dostosowanie do szerokości ekranu */
+    border: 2px solid white; /* Biała ramka */
+    border-radius: 10px; /* Zaokrąglone rogi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtelny cień */
+    filter: grayscale(100%); /* Czarno-biały filtr */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+	position: relative;
+    top: -340px;   
+    left: 1410px; 
+
+.golf8vid:hover {
+    transform: scale(1.02); /* Powiększenie przy najechaniu */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Głębszy cień */
+}
+
+.video-wrapper {
+    position: absolute;
+    bottom: -100%; /* Początkowa pozycja: schowany poniżej sekcji */
+    left: 0;
+    width: 100%;
+    animation: slideUp 2s ease-out forwards; /* Animacja przesuwania w górę */
+}
+
+
+@keyframes slideUp {
+    from {
+        bottom: -100%; /* Początkowa pozycja kontenera poniżej */
+    }
+    to {
+        bottom: 0; /* Końcowa pozycja kontenera na dole sekcji */
+    }
+}
+
+.video-caption {
+    position: absolute;
+    bottom: 10px; /* Odległość od dołu */
+    left: 50%; /* Wyśrodkowanie poziome */
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6); /* Tło dla napisu */
+    color: white; /* Kolor tekstu */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.flota {
+    background-image: url('zdjecia/tlo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 900px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+	overflow: hidden;
+	
+}
+
+
+.golf8h1{
+	position: relative; 
+	top: -380px; 
+	left:150px;
+	float:left;	
+	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	font-size:70px;
+	
+}
+
+.golf8zdjecie{
+	width:px;
+	height:px;
+	position: relative; 
+	top: -600px; 
+	left:-350px; 
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.golf8{
+	width: 200px; /* Szerokość 200 pikseli */
+    height: 100px;
+}
+
+
+.specyfikacje{
+	color:white;
+	text-align:left;
+	position: relative; 
+	top: -730px; 
+	left:150px; 
+	list-style-type: none;
+	font-size:18px;
+	letter-spacing:1px;
+}
+
+
+.specyfikacjeObrazki1{
+	width:30px;
+	height:30px;
+	position:relative; 
+	top:7px; 
+	left:-7px;
+	transition: filter 0.5s ease;
+}
+
+
+.specyfikacjeObrazki1:hover{
+	 filter: sepia(1) saturate(4) brightness(1.1) contrast(1.1);
+}
+	
+	
+	
+	
+.specyfikacjeObrazki2{
+	width:30px;
+	height:30px;
+	position: relative; 
+	top:7px; 
+	left:-7px;
+	transition: filter 0.5s ease;
+}
+
+
+.specyfikacjeObrazki2:hover{
+	  filter: sepia(1) saturate(4) brightness(1.1) contrast(1.1);
+}
+
+
+.specyfikacjeObrazki3{
+	width:30px;
+	height:30px;
+	position: relative; 
+	top:7px; 
+	left:-7px;
+	transition: filter 0.5s ease;
+}
+
+.specyfikacjeObrazki3:hover{
+	  filter: sepia(1) saturate(4) brightness(1.1) contrast(1.1);
+}
+
+.audi80{
+	width:px;
+	height:px;
+	position: relative;
+    top: -250px;   
+    left: -550px; 
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.audi80h1{
+	position: relative; 
+	top: -20px; 
+	left:-50px;
+	float:left;	
+	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	font-size:70px;
+	
+}
+
+.specyfikacjeAudi{
+	color:white;
+	text-align:left;
+	position: relative; 
+	top: -415px; 
+	left:-40px; 
+	list-style-type: none;
+	font-size:18px;
+	letter-spacing:1px;
+}
+
+.button22{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 6px 18px;
+    font-size: 24px;
+	text-align:center;
+    text-decoration: none; 
+    cursor: pointer;
+    display: inline-flex;
+	align-items: center;
+	justify-content: center;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+	overflow: hidden;
+    top: -490px;   
+    left: 204px; 
+	white-space: nowrap;
+}
+
+.button22:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+.button22 img {
+    transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out; /* Dodanie efektu zmiany filtra dla obrazka */
+    margin-right: 10px;
+}
+
+
+.button22:hover img {
+    transform: scale(1.2); /* Powiększenie tylko obrazka na hover */
+    filter: invert(1); /* Zmiana koloru obrazka na czarny przez inwersję kolorów */
+}
+
+.button11{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 6px 18px;
+    font-size: 24px;
+	text-align:center;
+    text-decoration: none; 
+    cursor: pointer;
+    display: inline-flex;
+	align-items: center;
+	justify-content: center;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+	overflow: hidden;
+    top: -800px;   
+    left: 400px; 
+	white-space: nowrap;
+}
+
+.button11 img {
+    transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out; /* Dodanie efektu zmiany filtra dla obrazka */
+    margin-right: 10px;
+}
+
+.button11:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+.button11:hover img {
+    transform: scale(1.2); /* Powiększenie tylko obrazka na hover */
+    filter: invert(1); /* Zmiana koloru obrazka na czarny przez inwersję kolorów */
+}
+
+.button1{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 6px 18px;
+    font-size: 24px;
+	text-align:center;
+    text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+    top: -700px;   
+    left: 10px; 
+}
+
+.button1:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+.button2{
+	background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 6px 18px;
+    font-size: 15px;
+    text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+}
+
+.button2:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+	
+	
+footer{
+	background-color:black;
+	color:white;
+	text-align:center;
+	padding:5px;
+	margin-top:2px;
+}
+
+.logoheader2{
+	border:2px solid white;
+	padding:10px;
+	margin:10px;
+	position: relative; 
+	top: 20px; 
+	left:625px; 
+}
+
+.zdjeciafooter{
+	position: relative; 
+	top: -200px; 
+	left:-650px; 
+	transform: scale(0.6);
+	text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+}
+
+.zdjeciafooter1:hover{
+    color: black;
+    transform: scale(1.1);	
+}
+
+.zdjeciafooter2:hover{
+    color: black;
+    transform: scale(1.1);	
+}
+
+.zdjeciafooter3:hover{
+    color: black;
+    transform: scale(1.1);	
+}
+
+.zdjeciafooter1{
+	border:2px solid white;
+	margin:10px;
+	background-color: transparent;
+	padding:10px;
+	text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+
+}
+.zdjeciafooter2{
+	border:2px solid white;
+	margin:10px;
+	background-color: transparent;
+	padding:10px;
+	text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+}
+.zdjeciafooter3{
+	border:2px solid white;
+	margin:10px;
+	background-color: transparent;
+	padding:10px;
+	text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+
+}
+
+.menufooter{
+	font-size:18px;
+	padding:3px;
+	margin:30px;
+	letter-spacing:1px;
+    text-decoration: none;
+	color: #D3D3D3; 
+    transition: color 0.4s ease; 
+	position: relative;
+    top: -310px;   
+    left: -75px; 
+}
+
+.menufooter:hover{
+	color: white;
+	text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+	transition: text-shadow 0.2s ease-in-out;	
+}
+
+.button1{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 6px 18px;
+    font-size: 24px;
+	text-align:center;
+    text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+    top: -69px;   
+    left: 90px; 
+}
+
+.button1:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}

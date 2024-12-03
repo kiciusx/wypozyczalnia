@@ -1,0 +1,464 @@
+*{
+	 font-family: 'Bebas Neue';
+}
+
+body{
+	background-color:dimgrey;
+	margin:0;
+	padding:0;
+}
+
+::selection {
+    background-color: gold;  /* Złote tło */
+    color: black;            /* Czarny tekst */
+}
+
+
+header{
+	background-color:#212121;
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat; 
+	height:800px;
+}
+
+
+
+.logoheader1{
+	border:2px solid white;
+	padding:10px;
+	margin:10px;
+	size:10px;
+}
+	
+.menu{
+	font-size:28px;
+	padding:3px;
+	margin:40px;
+	letter-spacing:1px;
+    text-decoration: none;
+	color: #D3D3D3; 
+    transition: color 0.4s ease; 
+	position: relative;
+    top: -68px;   
+    left: 70px; 
+	
+
+}
+
+.menu:hover{
+	color: white;
+	text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+	transition: text-shadow 0.2s ease-in-out;	
+}
+
+.menudiv{
+	font-size: 24px;
+	text-align:center;
+}
+
+h1{
+	color:white;
+	letter-spacing:3px;
+	font-size:100px;
+	position: relative;
+    top: -29px;   
+    left: 10px; 
+	text-align:center;
+}
+
+.kreska{
+	color:gold;
+	position: relative;
+    top: -650px;   
+    left: 10px; 
+}
+
+h3{
+	color:lightgray;
+	letter-spacing:2px;
+	position: relative;
+    top: -209px;   
+    left: 650px; 
+}
+
+
+.mailbox{
+	position: relative;
+    top: -610px;   
+    left: 1035px; 
+	width: 50px; 
+    height: 50px;
+}
+
+.textobokfilmu{
+	font-size:16px;
+	color:gold;
+	letter-spacing:1px;
+	position: relative;
+    top: -635px;   
+    left: 1100px; 
+}
+	
+.infolinia{
+	width: 20px; 
+    height: 20px;
+	position: relative;
+    top: -550px;   
+    left: 1045px; 
+}
+
+.mail{
+	padding-top:10px;
+	width: 25px; 
+    height: 25px;
+	position: relative;
+    top: -609px;   
+    left: 1093px; 
+
+}
+
+.infolinia1{
+	
+	position: relative;
+    top: -597px;   
+    left: 1135px; 
+}
+
+.mail1{
+	
+	position: relative;
+    top: -658px;   
+    left: 1135px; 
+}
+
+.golf8vid {
+    display: block; /* Wyświetlenie jako blok */
+    margin: 20px auto; /* Wyśrodkowanie */
+    max-width: 90%; /* Dostosowanie do szerokości ekranu */
+    border: 2px solid white; /* Biała ramka */
+    border-radius: 0px; /* Zaokrąglone rogi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtelny cień */
+    filter: grayscale(100%); /* Czarno-biały filtr */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+	position: relative;
+    top: -40px;   
+    left: 350px; 
+	
+}
+
+video{
+	filter: grayscale(100%); /* Filtr czarno-biały na początku */
+	transition: filter 2s ease-in-out;
+}
+video:hover {
+            filter: grayscale(0%); 
+}
+
+.golf8vid:hover {
+    transform: scale(1.02); /* Powiększenie przy najechaniu */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Głębszy cień */
+}
+
+.video-wrapper {
+    position: relative; /* Dla napisu na wideo */
+    display: inline-block;
+    text-align: center;
+}
+
+.video-caption {
+    position: absolute;
+    bottom: 10px; /* Odległość od dołu */
+    left: 50%; /* Wyśrodkowanie poziome */
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6); /* Tło dla napisu */
+    color: white; /* Kolor tekstu */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.flota {
+    background-image: url('tlo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 800px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+	
+}
+
+.golf8h1{
+	position: relative; 
+	top: -380px; 
+	left:150px;
+	float:left;	
+	text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	font-size:70px;
+	
+}
+
+.golf8zdjecie{
+	width:px;
+	height:px;
+	position: relative; 
+	top: -600px; 
+	left:-350px; 
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.golf8{
+	width: 200px; /* Szerokość 200 pikseli */
+    height: 100px;
+}
+
+.specyfikacje{
+	color:white;
+	text-align:left;
+	position: relative; 
+	top: -730px; 
+	left:150px; 
+	list-style-type: none;
+	font-size:18px;
+	letter-spacing:1px;
+}
+
+
+.specyfikacjeObrazki1{
+	width:30px;
+	height:30px;
+	position:relative; 
+	top:7px; 
+	left:-7px;
+}
+
+.specyfikacjeObrazki2{
+	width:30px;
+	height:30px;
+	position: relative; 
+	top:7px; 
+	left:-7px;
+}
+
+.specyfikacjeObrazki3{
+	width:30px;
+	height:30px;
+	position: relative; 
+	top:7px; 
+	left:-7px;
+}
+
+
+
+
+.custom-list{
+	list-style-type: none;
+	font-size:19px;
+	padding:10px;
+	margin:20px;
+	letter-spacing:1px;
+    text-decoration: none;
+	color:white;
+}
+
+.zdjeciawmenu1{
+	width:20px;
+	height:20px;
+	position: relative; 
+	top: 2px; 
+	left:-2px; 
+}
+
+
+.zdjeciawmenu2{
+	width:20px;
+	height:20px;
+	position: relative; 
+	top: 3px; 
+	left:0px;
+}
+
+.zdjeciawmenu3{
+	width:18px;
+	height:18px;
+	position: relative; 
+	top: 3px; 
+	left:0px;
+}
+
+
+
+.button1{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 6px 18px;
+    font-size: 24px;
+	text-align:center;
+    text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+    top: -700px;   
+    left: 10px; 
+}
+
+.button1:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+.button2{
+	background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 6px 18px;
+    font-size: 15px;
+    text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+}
+
+.button2:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+	
+	
+footer{
+	background-color:black;
+	color:white;
+	text-align:center;
+	padding:5px;
+	margin-top:2px;
+}
+
+.logoheader2{
+	border:2px solid white;
+	padding:10px;
+	margin:10px;
+	position: relative; 
+	top: 20px; 
+	left:625px; 
+}
+
+.zdjeciafooter{
+	position: relative; 
+	top: -200px; 
+	left:-650px; 
+	transform: scale(0.6);
+	text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+}
+
+.zdjeciafooter1:hover{
+    color: black;
+    transform: scale(1.1);	
+}
+
+.zdjeciafooter2:hover{
+    color: black;
+    transform: scale(1.1);	
+}
+
+.zdjeciafooter3:hover{
+    color: black;
+    transform: scale(1.1);	
+}
+
+.zdjeciafooter1{
+	border:2px solid white;
+	margin:10px;
+	background-color: transparent;
+	padding:10px;
+	text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+
+}
+.zdjeciafooter2{
+	border:2px solid white;
+	margin:10px;
+	background-color: transparent;
+	padding:10px;
+	text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+}
+.zdjeciafooter3{
+	border:2px solid white;
+	margin:10px;
+	background-color: transparent;
+	padding:10px;
+	text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+
+}
+
+.menufooter{
+	font-size:18px;
+	padding:3px;
+	margin:30px;
+	letter-spacing:1px;
+    text-decoration: none;
+	color: #D3D3D3; 
+    transition: color 0.4s ease; 
+	position: relative;
+    top: -310px;   
+    left: -75px; 
+}
+
+.menufooter:hover{
+	color: white;
+	text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+	transition: text-shadow 0.2s ease-in-out;	
+}
+
+.button1{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 6px 18px;
+    font-size: 24px;
+	text-align:center;
+    text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+    top: -69px;   
+    left: 90px; 
+}
+
+.button1:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}

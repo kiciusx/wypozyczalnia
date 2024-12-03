@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specyfikacja Samochodu</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1e1e1e; /* Ciemne tło */
+            margin: 0;
+            padding: 0;
+            color: white; /* Tekst w bieli */
+        }
+
+        .specification-container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 50px auto;
+            text-align: center;
+            color: white;
+            position: relative;
+            padding: 20px;
+        }
+
+        .specification-header {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: gold; /* Złoty kolor nagłówka */
+            text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7); /* Lekki cień */
+        }
+
+        .specification-table {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .spec-box {
+            width: 200px;
+            height: 160px;
+            border: 1px dashed white; /* Złote obramowanie */
+            background-color: #2a2a2a; /* Ciemniejszy odcień dla kontrastu */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            color: white;
+            margin: 3px;
+            box-sizing: border-box;
+            text-align: center;
+            position: relative;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Elegancki cień */
+            
+        }
+
+        .spec-box img {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            filter: brightness(0) saturate(100%) invert(82%) sepia(60%) saturate(653%) hue-rotate(2deg) brightness(96%) contrast(89%); /* Złoty filtr na obrazek */
+        }
+
+        .spec-box hr {
+            margin: 15px auto;
+            border: 1px solid gold; /* Złota kreska */
+            width: 60%;
+        }
+
+        .spec-box p {
+            margin-top: 1px;
+            margin-bottom: 2px;
+            font-size: 20px;
+            color: white; /* Tekst w bieli */
+			letter-spacing:1px;
+        }
+
+        .reserve-button {
+            padding: 15px 30px;
+            background-color: gold; /* Złoty przycisk */
+            color: black; /* Kontrastowy tekst */
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.5); /* Subtelny cień na tekście */
+        }
+
+        .reserve-button:hover {
+            background-color: #d4af37; /* Ciemniejsze złoto po najechaniu */
+        }
+		
+		
+		
+		*{
+	 font-family: 'Bebas Neue';
+}
+    </style>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="specification-container">
+    <!-- Nagłówek "Specyfikacja Samochodu" -->
+    <h1 class="specification-header">Specyfikacja Samochodu</h1>
+
+    <!-- Tabela Specyfikacji -->
+    <div class="specification-table">
+        <div class="spec-box">
+            <img src="zdjecia/engine2.png" alt="Obrazek">
+            <p>2.0 L</p>
+            <hr>
+            <p>Silnik</p>
+        </div>
+        <div class="spec-box">
+            <img src="zdjecia/piston.png" alt="Obrazek">
+            <p>320 KM</p>
+            <hr>
+            <p>MOC SILNIKA (KM)</p>
+        </div>
+        <div class="spec-box">
+            <img src="zdjecia/awd.png" alt="Obrazek">
+            <p>AWD (4x4)</p>
+            <hr>
+            <p>NAPĘD</p>
+        </div>
+        <div class="spec-box">
+            <img src="zdjecia/gearbox2.png" alt="Obrazek">
+            <p>Automatyczna</p>
+            <hr>
+            <p>SKRZYNIA BIEGÓW</p>
+        </div>
+        <div class="spec-box">
+            <img src="zdjecia/clock.png" alt="Obrazek">
+            <p>4.7s</p>
+            <hr>
+            <p>0-100 KM/H</p>
+        </div>
+        <div class="spec-box">
+            <img src="zdjecia/meter2.png" alt="Obrazek">
+            <p>250 km/h</p>
+            <hr>
+            <p>V-MAX KM/H</p>
+        </div>
+    </div>
+    
+    <!-- Przycisk rezerwacji -->
+    <button class="reserve-button">Zarezerwuj</button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,420 @@
+*{
+	 font-family: 'Bebas Neue';
+}
+
+html , body{
+	background-color:#191919;
+	margin:0;
+	padding:0;
+	height: 100%;
+	
+}
+
+body{
+	display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ustala minimalną wysokość na 100% wysokości ekranu */
+}
+
+::selection {
+    background-color: gold;  /* Złote tło */
+    color: black;            /* Czarny tekst */
+}
+
+
+header{
+	background-image: url('tloDodge.jpg');
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat; 
+	height:450px;
+	margin-bottom:10px;
+}
+
+
+
+.logoheader1{
+	border:2px solid white;
+	padding:10px;
+	margin:10px;
+	size:10px;
+}
+	
+.menu{
+	font-size:28px;
+	padding:3px;
+	margin:40px;
+	letter-spacing:1px;
+    text-decoration: none;
+	color: #D3D3D3; 
+    transition: color 0.4s ease; 
+	position: relative;
+    top: -68px;   
+    left: 70px; 
+	
+
+}
+
+.menu:hover{
+	color: white;
+	text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+	transition: text-shadow 0.2s ease-in-out;	
+}
+
+.menudiv{
+	font-size: 24px;
+	text-align:center;
+}
+
+h1{
+	color:white;
+	letter-spacing:3px;
+	font-size:100px;
+	position: relative;
+    top: -29px;   
+    left: 240px; 
+}
+
+.kreska{
+	color:gold;
+	position: relative;
+    top: -195px;   
+    left: 240px; 
+}
+
+h3{
+	color:lightgray;
+	letter-spacing:2px;
+	position: relative;
+    top: -209px;   
+    left: 650px; 
+}
+
+
+
+
+
+.h1wynajem{
+	font-size:50px;
+	padding-top:120px;
+	position: relative;
+    top: 9px;   
+    left: 30px; 
+}
+
+
+.h1wynajem2{
+	font-size:50px;
+	padding-top:120px;
+	position: relative;
+    top: -40px;   
+    left: 217px; 
+}
+
+.krotko {
+    padding-bottom: 5px; /* Dodaj przestrzeń poniżej tekstu */
+    border-bottom: 2px solid white; /* Cienka biała kreska */
+    width: 80%; /* Skrócenie linii do 80% szerokości */
+    margin: 0 auto; /* Wyśrodkowanie linii */
+}
+
+.dlug {
+        padding-top: 10px; /* Dodaj przestrzeń na górze, jeśli potrzeba */
+    }
+
+h4{
+	font-size:25px;
+	color:white;
+	letter-spacing:1px;
+    max-width: 650px; /* Określa maksymalną szerokość dla tekstu */
+    width: 100%; /* Zapewnia, że element może się rozciągać, ale nie przekroczy max-width */
+    margin: 0 auto; /* Wyśrodkowanie elementu na stronie */
+	position: relative;
+    top: -80px;   
+    left: 200px; 
+}
+
+.h42{
+	font-size:25px;
+	color:white;
+	letter-spacing:1px;
+    max-width: 650px; /* Określa maksymalną szerokość dla tekstu */
+    width: 100%; /* Zapewnia, że element może się rozciągać, ale nie przekroczy max-width */
+    margin: 0 auto; /* Wyśrodkowanie elementu na stronie */
+	position: relative;
+    top: -135px;   
+    left: 195px; 
+}
+
+
+
+.linikawLi{
+	color:white;
+	list-style-type: square;
+	padding:5px;
+}
+
+form{
+	font-size:18px;
+	text-align:left;
+	position: relative;
+    top: -70px;   
+    left: 600px;  
+}
+
+.button1{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 6px 18px;
+    font-size: 24px;
+	text-align:center;
+    text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+    top: -700px;   
+    left: 10px; 
+}
+
+.button1:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+.button2{
+	background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 6px 18px;
+    font-size: 15px;
+    text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+}
+
+.button2:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+	
+	
+footer{
+	background-color:black;
+	color:white;
+	text-align:center;
+	padding-right:90px;
+}
+
+
+
+.logoheader2{
+	border:2px solid white;
+	padding:10px;
+	margin:10px;
+	position: relative; 
+	top: 20px; 
+	left:665px; 
+}
+
+.zdjeciafooter{
+	position: relative; 
+	top: -200px; 
+	left:-650px; 
+	transform: scale(0.6);
+	text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+}
+
+.zdjeciafooter1:hover{
+    color: black;
+    transform: scale(1.1);	
+}
+
+.zdjeciafooter2:hover{
+    color: black;
+    transform: scale(1.1);	
+}
+
+.zdjeciafooter3:hover{
+    color: black;
+    transform: scale(1.1);	
+}
+
+.zdjeciafooter1{
+	border:2px solid white;
+	margin:10px;
+	background-color: transparent;
+	padding:10px;
+	text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+
+}
+.zdjeciafooter2{
+	border:2px solid white;
+	margin:10px;
+	background-color: transparent;
+	padding:10px;
+	text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+}
+.zdjeciafooter3{
+	border:2px solid white;
+	margin:10px;
+	background-color: transparent;
+	padding:10px;
+	text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+
+}
+
+.menufooter{
+	font-size:18px;
+	padding:3px;
+	margin:30px;
+	letter-spacing:1px;
+    text-decoration: none;
+	color: #D3D3D3; 
+    transition: color 0.4s ease; 
+	position: relative;
+    top: -310px;   
+    left: -40px; 
+}
+
+.menufooter:hover{
+	color: white;
+	text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+	transition: text-shadow 0.2s ease-in-out;	
+}
+
+.nokurwafooter{
+	
+}
+.button1{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 6px 18px;
+    font-size: 24px;
+	text-align:center;
+    text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+    top: -69px;   
+    left: 90px; 
+}
+
+.button1:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+
+
+
+.copyright{
+	position: relative;
+    top: 40px;   
+    left: -90px; 
+}
+
+
+
+.faq-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    max-width: 900px;
+	position: relative;
+    top: -80px;   
+    left: -200px; 
+
+}
+
+.faq-questions {
+    width: 45%;
+}
+
+.faq-item {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #444;
+    background-color: #333;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+	letter-spacing:1px;
+	font-size:18px;
+}
+
+.faq-item:hover {
+    background-color: #444;
+}
+
+.faq-item.active {
+    background-color: gold;
+    color: black;
+}
+
+.faq-answer-panel {
+    width: 50%;
+    padding: 15px;
+    background-color: #444;
+    color: white;
+    text-align: left;
+	letter-spacing:1px;
+	font-size:25px;
+}
+
+.faq-answer-panel h2 {
+    margin-top: 0;
+    color: gold;
+}
+
+.faq-answer-panel p {
+    margin: 10px 0 0;
+    line-height: 1.6;
+}
+
+/* Ogólne style dla responsywności */
+@media (max-width: 768px) {
+    .faq-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq-questions, .faq-answer-panel {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

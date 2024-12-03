@@ -1,0 +1,346 @@
+*{
+	 font-family: 'Bebas Neue';
+}
+
+body{
+	background-color:#191919;
+	margin:0;
+	padding:0;
+}
+
+::selection {
+    background-color: gold;  /* Złote tło */
+    color: black;            /* Czarny tekst */
+}
+
+
+header{
+	background-image: url('tloDodge.jpg');
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat; 
+	height:350px;
+	margin-bottom:10px;
+}
+
+
+
+.logoheader1{
+	border:2px solid white;
+	padding:10px;
+	margin:10px;
+	size:10px;
+}
+	
+.menu{
+	font-size:28px;
+	padding:3px;
+	margin:40px;
+	letter-spacing:1px;
+    text-decoration: none;
+	color: #D3D3D3; 
+    transition: color 0.4s ease; 
+	position: relative;
+    top: -68px;   
+    left: 70px; 
+	
+
+}
+
+.menu:hover{
+	color: white;
+	text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+	transition: text-shadow 0.2s ease-in-out;	
+}
+
+.menudiv{
+	font-size: 24px;
+	text-align:center;
+}
+
+h1{
+	color:white;
+	letter-spacing:3px;
+	font-size:100px;
+	position: relative;
+    top: -29px;   
+    left: 150px; 
+}
+
+.kreska{
+	color:gold;
+	position: relative;
+    top: -195px;   
+    left: 150px; 
+}
+
+h3{
+	color:lightgray;
+	letter-spacing:2px;
+	position: relative;
+    top: -209px;   
+    left: 650px; 
+}
+
+
+
+
+.tlo {
+    position: relative;
+    height: 900px;  /* Wysokość kontenera */
+    width: 100%;    /* Szerokość kontenera */
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden; /* Ukrywa wszystko, co wychodzi poza kontener */
+}
+
+.tlo video {
+    position: absolute;  /* Ustawia film w stosunku do rodzica */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Dopasowuje film do kontenera */
+    z-index: -1;  /* Umieszcza film na tle */
+	filter: blur(0px) brightness(50%);
+}
+
+
+.h1wynajem{
+	font-size:50px;
+	padding-top:120px;
+	position: relative;
+    top: 9px;   
+    left: 30px; 
+}
+
+
+.h1wynajem2{
+	font-size:50px;
+	padding-top:120px;
+	position: relative;
+    top: -40px;   
+    left: 217px; 
+}
+
+.krotko {
+    padding-bottom: 5px; /* Dodaj przestrzeń poniżej tekstu */
+    border-bottom: 2px solid white; /* Cienka biała kreska */
+    width: 80%; /* Skrócenie linii do 80% szerokości */
+    margin: 0 auto; /* Wyśrodkowanie linii */
+}
+
+.dlug {
+        padding-top: 10px; /* Dodaj przestrzeń na górze, jeśli potrzeba */
+    }
+
+h4{
+	font-size:25px;
+	color:white;
+	letter-spacing:1px;
+    max-width: 650px; /* Określa maksymalną szerokość dla tekstu */
+    width: 100%; /* Zapewnia, że element może się rozciągać, ale nie przekroczy max-width */
+    margin: 0 auto; /* Wyśrodkowanie elementu na stronie */
+	position: relative;
+    top: -80px;   
+    left: 200px; 
+}
+
+.h42{
+	font-size:25px;
+	color:white;
+	letter-spacing:1px;
+    max-width: 650px; /* Określa maksymalną szerokość dla tekstu */
+    width: 100%; /* Zapewnia, że element może się rozciągać, ale nie przekroczy max-width */
+    margin: 0 auto; /* Wyśrodkowanie elementu na stronie */
+	position: relative;
+    top: -135px;   
+    left: 195px; 
+}
+
+
+
+.linikawLi{
+	color:white;
+	list-style-type: square;
+	padding:5px;
+}
+
+form{
+	font-size:18px;
+	text-align:left;
+	position: relative;
+    top: -70px;   
+    left: 600px;  
+}
+
+.button1{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 6px 18px;
+    font-size: 24px;
+	text-align:center;
+    text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+    top: -700px;   
+    left: 10px; 
+}
+
+.button1:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+.button2{
+	background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 6px 18px;
+    font-size: 15px;
+    text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+}
+
+.button2:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+	
+	
+footer{
+	background-color:black;
+	color:white;
+	text-align:center;
+	padding:5px;
+	margin-top:2px;
+}
+
+.logoheader2{
+	border:2px solid white;
+	padding:10px;
+	margin:10px;
+	position: relative; 
+	top: 20px; 
+	left:625px; 
+}
+
+.zdjeciafooter{
+	position: relative; 
+	top: -200px; 
+	left:-650px; 
+	transform: scale(0.6);
+	text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+}
+
+.zdjeciafooter1:hover{
+    color: black;
+    transform: scale(1.1);	
+}
+
+.zdjeciafooter2:hover{
+    color: black;
+    transform: scale(1.1);	
+}
+
+.zdjeciafooter3:hover{
+    color: black;
+    transform: scale(1.1);	
+}
+
+.zdjeciafooter1{
+	border:2px solid white;
+	margin:10px;
+	background-color: transparent;
+	padding:10px;
+	text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+
+}
+.zdjeciafooter2{
+	border:2px solid white;
+	margin:10px;
+	background-color: transparent;
+	padding:10px;
+	text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+}
+.zdjeciafooter3{
+	border:2px solid white;
+	margin:10px;
+	background-color: transparent;
+	padding:10px;
+	text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+
+}
+
+.menufooter{
+	font-size:18px;
+	padding:3px;
+	margin:30px;
+	letter-spacing:1px;
+    text-decoration: none;
+	color: #D3D3D3; 
+    transition: color 0.4s ease; 
+	position: relative;
+    top: -310px;   
+    left: -75px; 
+}
+
+.menufooter:hover{
+	color: white;
+	text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+	transition: text-shadow 0.2s ease-in-out;	
+}
+
+
+.button1{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 6px 18px;
+    font-size: 24px;
+	text-align:center;
+    text-decoration: none; 
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	letter-spacing:2px;
+	position: relative;
+    top: -69px;   
+    left: 90px; 
+}
+
+.button1:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
